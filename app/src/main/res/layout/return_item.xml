@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+                <!--android:id="@+id/bookname2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="@font/century"-->
+                <!--android:padding="5dp"-->
+                <!--android:text="name"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="15sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/bookauth2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="@font/century"-->
+                <!--android:padding="5dp"-->
+                <!--android:text="auth"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="15sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/booksub2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="@font/century"-->
+                <!--android:padding="5dp"-->
+                <!--android:text="sub"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="15sp" />-->
+
+            <TextView
+                android:id="@+id/bookid2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/century"
+                android:padding="5dp"
+                android:text="Id:"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

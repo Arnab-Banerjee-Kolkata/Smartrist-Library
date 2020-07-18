@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LibraryOptions"
+    android:background="@android:color/transparent">
+    <ImageView
+        android:id="@+id/bgImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:id="@+id/reqBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="View Requisitions"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/gilc____"
+            android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+        <Button
+            android:id="@+id/issueBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Issue Books"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/gilc____"
+            android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+        <Button
+            android:id="@+id/retBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:fontFamily="@font/gilc____"
+            android:text="Accept Return"
+            android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+    </LinearLayout>
+
+</FrameLayout>
