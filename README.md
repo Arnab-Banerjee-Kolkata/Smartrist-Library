@@ -1,5 +1,6 @@
 # Smartrist-Library
-Library application for Smartrist card
+Library application for Smartrist card.
+Librarians can use this to see the pending book requisitions, issue books and accept book returns from students. Students have to scan their smartrist cards to take books or submit book returns. This ensures that no other person can take or return any one else's books.
 
 # Screenshots
 
