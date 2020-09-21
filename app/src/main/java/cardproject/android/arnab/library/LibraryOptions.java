@@ -3,6 +3,7 @@ package cardproject.android.arnab.library;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -23,6 +24,16 @@ public class LibraryOptions extends AppCompatActivity implements View.OnClickLis
         issueBtn=findViewById(R.id.issueBtn);
         retBtn=findViewById(R.id.retBtn);
         bgImg = findViewById(R.id.bgImg);
+        Toolbar toolbar = findViewById(R.id.toolbar5);
+        toolbar.setTitle("Smartrist : Library");
+        Button bcred=findViewById(R.id.creditb);
+        bcred.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Credits.class);
+                startActivity(intent);
+            }
+        });
 
         Glide.with(getApplicationContext()).load(this.getResources().getDrawable(R.drawable.libbg)).into(bgImg);
 

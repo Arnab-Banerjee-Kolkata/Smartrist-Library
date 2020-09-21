@@ -10,10 +10,11 @@
         android:id="@+id/issueScanWait"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#7ae17979">
+        android:background="#7ae17979"
+        android:gravity="center">
         <ProgressBar
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
     </RelativeLayout>
 
 </RelativeLayout>

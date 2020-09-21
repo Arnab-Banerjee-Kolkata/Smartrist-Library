@@ -39,7 +39,7 @@ public class ShowRequisition extends AppCompatActivity implements View.OnClickLi
 {
     String information;
     long id;
-    RelativeLayout srWait;
+    RelativeLayout srWait,reqMsg;
     LinearLayout ll;
     int numReq=0;
     TextView issueTotal, issueId;
@@ -62,6 +62,7 @@ public class ShowRequisition extends AppCompatActivity implements View.OnClickLi
         issueId=findViewById(R.id.issueId);
         issueTotal=findViewById(R.id.issueTotal);
         issue2=findViewById(R.id.issue2);
+        reqMsg=findViewById(R.id.reqMsg);
 
 
         toolbar3.setTitle("Issue books");
@@ -79,6 +80,8 @@ public class ShowRequisition extends AppCompatActivity implements View.OnClickLi
                 .load(resid).into(imageView1);
 
         issueId.setText(id+"");
+
+        reqMsg.setVisibility(View.GONE);
 
 
         getIndivRequisition(getApplicationContext(),id);
@@ -122,6 +125,11 @@ public class ShowRequisition extends AppCompatActivity implements View.OnClickLi
                         sub.setId(i*10+2);
                         id2.setId(i*10+3);
 
+                    }
+                    if(numReq==0)
+                    {
+                        reqMsg.setVisibility(View.VISIBLE);
+                        issue2.setEnabled(false);
                     }
 
                 } catch (JSONException e) {
@@ -213,9 +221,14 @@ public class ShowRequisition extends AppCompatActivity implements View.OnClickLi
                         Toast.makeText(mContext,"Issued",Toast.LENGTH_SHORT).show();
                         finish();
                     }
+                    else
+                    {
+                        Toast.makeText(mContext,"Some books are already issued",Toast.LENGTH_SHORT).show();
+                    }
                 } catch (JSONException e)
                 {
                     e.printStackTrace();
+                    Toast.makeText(mContext,response,Toast.LENGTH_LONG).show();
                     finish();
 //                    err.setText(e.toString());
                 }

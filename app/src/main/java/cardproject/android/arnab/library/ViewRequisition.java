@@ -56,7 +56,14 @@ public class ViewRequisition extends AppCompatActivity implements AdapterView.On
         waitScreen=findViewById(R.id.waitScreen);
 
 
-        toolbar.setTitle("App Name");
+        toolbar.setTitle("Requisition List");
+        toolbar.setNavigationIcon(R.drawable.back);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         int resid = R.drawable.libbg;
         ImageView imageView1 = findViewById(R.id.imageView);
         Glide

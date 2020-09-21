@@ -92,8 +92,8 @@ public class IndividualRequisition extends AppCompatActivity
 
                         View v = LayoutInflater.from(mContext).inflate(R.layout.list_item,null);
                         TextView t1 =new TextView(mContext);
-                        t1.setText((i+1)+".\nSubject:\t"+req.getString("subjectName")+"\nBook:\t"+"\""+
-                                req.getString("bookName")+"\""+"\nAuthor:\t"+req.getString("authorName"));
+                        t1.setText((i+1)+".\t\tSubject : \t"+req.getString("subjectName")+"\n\t\t\tBook : \t"+"\""+
+                                req.getString("bookName")+"\""+"\n\t\t\tAuthor : \t"+req.getString("authorName"));
                         //Toast.makeText(mContext,i+"",Toast.LENGTH_SHORT).show();
                         t1.setTextColor(getResources().getColor(android.R.color.white));
                         t1.setTextSize(15);

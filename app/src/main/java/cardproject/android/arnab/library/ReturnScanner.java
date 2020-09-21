@@ -79,8 +79,6 @@ public class ReturnScanner extends AppCompatActivity
         }
         if(resultCode==0)
         {
-            Intent intent=new Intent(getApplicationContext(),LibraryOptions.class);
-            startActivity(intent);
             finish();
         }
 

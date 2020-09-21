@@ -3,74 +3,59 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="5dp"
     android:layout_margin="5dp"
-    app:cardBackgroundColor="@android:color/transparent">
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/century"
-            android:text="name"
-            android:textSize="15sp"
             android:id="@+id/bookname"
-            android:textColor="@android:color/white"
-            android:padding="5dp"/>
-
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/century"
-            android:text="auth"
+            android:padding="5dp"
+            android:text="name"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
             android:id="@+id/bookauth"
-            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century"
             android:padding="5dp"
-            android:textColor="@android:color/white"/>
+            android:text="auth"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/century"
             android:id="@+id/booksub"
-            android:text="sub"
-            android:padding="5dp"
-            android:textSize="15sp"
-            android:textColor="@android:color/white"/>
-
-        <!--<android.support.design.widget.TextInputLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content">-->
-
-            <!--<android.support.design.widget.TextInputEditText-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:background="@drawable/textboxbg"-->
-                <!--android:padding="8dp"-->
-                <!--android:fontFamily="@font/century"-->
-                <!--android:id="@+id/bookid"-->
-                <!--android:textColor="@android:color/white"-->
-                <!--android:layout_margin="5dp"-->
-                <!--android:hint="Book ID"-->
-                <!--android:textSize="15sp"/>-->
-        <!--</android.support.design.widget.TextInputLayout>-->
-        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/textboxbg"
-            android:padding="8dp"
             android:fontFamily="@font/century"
-            android:id="@+id/bookid"
+            android:padding="5dp"
+            android:text="sub"
             android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/bookid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:background="@drawable/textboxbg"
+            android:fontFamily="@font/century"
             android:hint="Book ID"
-            android:textSize="15sp"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="15sp" />
 
     </LinearLayout>
 

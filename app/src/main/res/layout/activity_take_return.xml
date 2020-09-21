@@ -92,21 +92,38 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/gill_con"
+            android:drawableStart="@drawable/ic_check_black_24dp"
+            android:drawablePadding="5dp"
             android:text="Accept Return"
             android:textAllCaps="false"
-            android:textSize="20sp"
+            android:textSize="15sp"
             android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
     </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/retMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Books taken"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textAllCaps="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/retWait"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#7ae17979">
+        android:background="#7ae17979"
+        android:gravity="center">
         <ProgressBar
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
     </RelativeLayout>
 
 </RelativeLayout>

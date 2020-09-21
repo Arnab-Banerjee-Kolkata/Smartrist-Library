@@ -125,17 +125,36 @@
             android:layout_gravity="center"
             android:layout_margin="5dp"
             android:text="Issue Books"
-            android:textAllCaps="false" />
+            android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:fontFamily="@font/gill_con"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"/>
     </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/reqMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Requisition"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textAllCaps="true" />
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/srWait"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#7eef7676">
+        android:background="#7eef7676"
+        android:gravity="center">
         <ProgressBar
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
     </RelativeLayout>
 
 </RelativeLayout>

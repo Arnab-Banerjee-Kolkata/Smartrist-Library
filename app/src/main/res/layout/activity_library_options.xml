@@ -1,54 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LibraryOptions"
-    android:background="@android:color/transparent">
+    android:background="@android:color/transparent"
+    tools:context=".LibraryOptions">
+
     <ImageView
         android:id="@+id/bgImg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="300dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <Button
+        android:id="@+id/creditb"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:drawableStart="@drawable/ic_stars_black_24dp"
+        android:padding="11dp"
+        android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical"
-        android:layout_gravity="center"
-        >
-        <Button
-            android:id="@+id/reqBtn"
+        android:layout_below="@id/toolbar5">
+
+        <ImageView
             android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="-75dp"
+            android:src="@drawable/libicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="View Requisitions"
+            android:layout_marginTop="75dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/century"
+            android:text="Select one of these options to get started"
             android:textColor="@android:color/white"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:layout_marginBottom="50dp"
-            android:fontFamily="@font/gilc____"
-            android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
-        <Button
-            android:id="@+id/issueBtn"
-            android:layout_width="150dp"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Issue Books"
-            android:textColor="@android:color/white"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:layout_marginBottom="50dp"
-            android:fontFamily="@font/gilc____"
-            android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/reqBtn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gill_con"
+                android:text="View Requisitions"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_view_headline_black_24dp"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:padding="8dp"
+                android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <Button
+                android:id="@+id/issueBtn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gill_con"
+                android:text="Issue Books"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_playlist_add_check_black_24dp"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        </LinearLayout>
+
         <Button
             android:id="@+id/retBtn"
-            android:layout_width="150dp"
+            android:layout_width="130dp"
+            android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:fontFamily="@font/gilc____"
+            android:fontFamily="@font/gill_con"
             android:text="Accept Return"
-            android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:drawableStart="@drawable/ic_input_black_24dp"
+            android:textSize="15sp"
+            android:padding="13dp"
+            android:theme="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
     </LinearLayout>
 
-</FrameLayout>
+</RelativeLayout>

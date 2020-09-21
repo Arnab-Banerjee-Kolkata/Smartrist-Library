@@ -31,7 +31,7 @@ import java.util.ArrayList;
 public class TakeReturn extends AppCompatActivity implements View.OnClickListener
 {
     String information="";
-    RelativeLayout retWait;
+    RelativeLayout retWait,retMsg;
     long candidateId;
     LinearLayout ll;
     Button ret2;
@@ -52,12 +52,14 @@ public class TakeReturn extends AppCompatActivity implements View.OnClickListene
         ll= findViewById(R.id.linel);
         ret2=findViewById(R.id.ret2);
         idVal=findViewById(R.id.idVal);
+        retMsg=findViewById(R.id.retMsg);
 
 
         String str[]=information.split("@");
         candidateId =Long.parseLong(str[0].trim());
 
         idVal.setText(candidateId+"");
+        retMsg.setVisibility(View.GONE);
 
 
         toolbar3.setTitle("Return books");
@@ -118,6 +120,11 @@ public class TakeReturn extends AppCompatActivity implements View.OnClickListene
 //                        sub.setId(i*10+2);
                         id.setId(i*10+3);
                         checkBox.setId(i*10+4);
+                    }
+                    if(numTaken==0)
+                    {
+                        retMsg.setVisibility(View.VISIBLE);
+                        ret2.setEnabled(false);
                     }
 
                 } catch (JSONException e) {

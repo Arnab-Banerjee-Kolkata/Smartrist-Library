@@ -47,4 +47,10 @@ dependencies {
     implementation 'com.tempos21.t21crypt:t21_crypter_android:1.0.5'
 
     implementation 'com.android.support:design:28.0.0'
+
+    //text Animators
+    implementation "com.hanks:htextview-base:0.1.6"
+    implementation "com.hanks:htextview-fade:0.1.6"
+    implementation "com.hanks:htextview-scale:0.1.6"
+    implementation "com.hanks:htextview-fall:0.1.6"
 }
